@@ -16,10 +16,14 @@
 
 <br>
 
-<br>
-
 ::github{repo="cancan-da-yo/about"}
 
 これは私のGitHubです、ぜひぜひ応援してくださいね！ ~~応援しなくてもいいだよ~~
 
 連絡先：support@yucanli.top
+
+
+
+
+
+ps：一番下のロリ画像はBlogの生存日数なんです。
