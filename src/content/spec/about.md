@@ -1,9 +1,23 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# このサイトについて
 
-::github{repo="saicaca/fuwari"}
+についての時間でーす！
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+まずは自己紹介ですね！
+
+私はカンカン、性別不明·年齢不明、アニメや漫画など好きで、一番好きな漫画家はこかむも先生、好きな漫画は先生のクロシオカレントです、見ていない人はぜひ見てくださいね！
+
+このBlogは私の二つ目のBlogなので、著作権表記は去年（2024）から始まりました
+
+それから、~~私は日本人~~  じゃなくて、中国人ですよ
+
+冗談はさておき、実は日本語の勉強はも私の趣味の一つです、「日本語でBlogを作りましょうう！」と思っていた時に、ちょうどAstroとFuwariを見つけました、正直これは本当に素晴らしいのブログテーマで、とても気に入っています
+
+あっ言い忘れてた、私は超神経質な人間なので、変に抽象的なこと言っても気にしないでくださいね～（実はこの文、AIに聞いちゃった、単語がマジで難しいね）
+
+
+
+::github{repo="cancan-da-yo"}
+
+これは私のGitHubです、ぜひぜひ応援してくださいね！ ~~応援しなくてもいいだよ~~
+
+連絡先：support@yucanli.top
