@@ -16,7 +16,7 @@
 
 
 
-::github{repo="cancan-da-yo"}
+::github{repo="cancan-da-yo/"}
 
 これは私のGitHubです、ぜひぜひ応援してくださいね！ ~~応援しなくてもいいだよ~~
 
