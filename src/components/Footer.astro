@@ -1,22 +1,11 @@
 ---
 
+import DayCounterImage from "../components/DayCounterImage.astro";
 import { profileConfig } from "../config";
 import { url } from "../utils/url-utils";
 
 const currentYear = new Date().getFullYear();
 ---
-
-<script is:inline>
-	document.addEventListener("DOMContentLoaded", () => {
-		const startDate = new Date("2025-07-08");
-		const today = new Date();
-		const diffDays = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
-		const countImg = document.getElementById("counter-image");
-		if (countImg) {
-			countImg.src = `https://count.getloli.com/@カンカン?name=カンカン&theme=rule34&padding=4&offset=0&align=bottom&scale=1&pixelated=1&darkmode=1&num=${1 + diffDays}`;
-		}
-	});
-</script>
 
 <!--<div class="border-t border-[var(&#45;&#45;primary)] mx-16 border-dashed py-8 max-w-[var(&#45;&#45;page-width)] flex flex-col items-center justify-center px-6">-->
 <div class="transition border-t border-black/10 dark:border-white/15 my-10 border-dashed mx-32"></div>
@@ -30,6 +19,6 @@ const currentYear = new Date().getFullYear();
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://astro.build">Astro</a> &
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/saicaca/fuwari">Fuwari</a><br>
 		<a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://icp.gov.moe/?keyword=20250708">萌ICP备20250708号</a><br>
-		<img id="counter-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" class="inline align-middle relative top-[20px]" alt="カンカン"/>
+		<DayCounterImage />
 	</div>
 </div>

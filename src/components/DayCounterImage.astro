@@ -1,0 +1,9 @@
+---
+const startDate = new Date("2025-07-08");
+const today = new Date();
+const diffDays = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+const num = 1 + diffDays;
+const url = `https://count.getloli.com/@カンカン?name=カンカン&theme=rule34&padding=4&offset=0&align=bottom&scale=1&pixelated=1&darkmode=1&num=${num}`;
+---
+
+<img src={url} class="inline align-middle relative top-[20px]" alt="カンカン" />
