@@ -22,8 +22,6 @@
 
 連絡先：support@yucanli.top
 
+<br>
 
-
-
-
-ps：一番下のロリ画像はBlogの生存日数なんです。
+ps：一番下のロリ画像はBlogの生存日数なんです
