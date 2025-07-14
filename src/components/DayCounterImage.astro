@@ -1,8 +1,18 @@
 ---
 const startDate = new Date("2025-07-08");
-const today = new Date();
+
+// 当前时间转换为东京时间（UTC+9），只保留年月日部分
+const now = new Date();
+const tokyoOffset = 9 * 60; // 9 小时 = 540 分钟
+const utc = now.getTime() + now.getTimezoneOffset() * 60 * 1000;
+const tokyoDate = new Date(utc + tokyoOffset * 60 * 1000);
+
+// 取东京时间的“年月日”用于计算天数差（忽略时分秒）
+const today = new Date(tokyoDate.getFullYear(), tokyoDate.getMonth(), tokyoDate.getDate());
+
 const diffDays = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
 const num = 1 + diffDays;
+
 const url = `https://count.getloli.com/@カンカン?name=カンカン&theme=rule34&padding=4&offset=0&align=bottom&scale=1&pixelated=1&darkmode=1&num=${num}`;
 ---
 
