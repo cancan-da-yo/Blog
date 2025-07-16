@@ -1,13 +1,10 @@
 ---
-const startDate = new Date("2025-07-08");
+const startDate = new Date(2025, 6, 8); // 7 月是 6
 
-// 当前时间转换为东京时间（UTC+9），只保留年月日部分
 const now = new Date();
-const tokyoOffset = 9 * 60; // 9 小时 = 540 分钟
+const tokyoOffset = 9 * 60;
 const utc = now.getTime() + now.getTimezoneOffset() * 60 * 1000;
 const tokyoDate = new Date(utc + tokyoOffset * 60 * 1000);
-
-// 取东京时间的“年月日”用于计算天数差（忽略时分秒）
 const today = new Date(tokyoDate.getFullYear(), tokyoDate.getMonth(), tokyoDate.getDate());
 
 const diffDays = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
