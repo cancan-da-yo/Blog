@@ -2,7 +2,7 @@
 title: このサイトについて
 published: 2025-07-12
 description: "初めまして🤓"
-tags: [""]
+tags: []
 category: 日常
 draft: false
 ---
