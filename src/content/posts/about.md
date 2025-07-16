@@ -23,10 +23,6 @@ draft: false
 
 <br>
 
-::github{repo="cancan-da-yo/about"}
-
-これは私のGitHubです、ぜひぜひ応援してくださいね！ ~~応援しなくてもいいだよ~~
-
 連絡先：support@yucanli.top
 
 <br>
