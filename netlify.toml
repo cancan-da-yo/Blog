@@ -1,6 +1,6 @@
 [functions]
   directory = "netlify/functions"
+  included_files = []
 
-[[functions]]
-  name = "rebuild"
-  schedule = "1 15 * * *"  # 东京时间 0 点（= UTC 15 点）
+[functions.rebuild]
+  schedule = "1 15 * * *"  # 东京时间 0:01（UTC+9）
