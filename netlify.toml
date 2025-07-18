@@ -1,0 +1,6 @@
+[functions]
+  directory = "netlify/functions"
+
+[[functions]]
+  name = "rebuild"
+  schedule = "1 15 * * *"  # 东京时间 0 点（= UTC 15 点）
