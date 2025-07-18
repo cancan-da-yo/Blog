@@ -1,38 +1,15 @@
 ---
+const startDate = new Date(2025, 6, 8); // 7 月是 6
+
+const now = new Date();
+const tokyoOffset = 9 * 60;
+const utc = now.getTime() + now.getTimezoneOffset() * 60 * 1000;
+const tokyoDate = new Date(utc + tokyoOffset * 60 * 1000);
+const today = new Date(tokyoDate.getFullYear(), tokyoDate.getMonth(), tokyoDate.getDate());
+
+const diffDays = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+
+const url = `https://count.getloli.com/@カンカン?name=カンカン&theme=rule34&padding=4&offset=0&align=bottom&scale=1&pixelated=1&darkmode=1&num=${diffDays}`;
 ---
 
-<!-- 图片容器 -->
-<img id="day-counter" class="inline align-middle relative top-[20px]" alt="カンカン" loading="lazy" />
-
-<!-- 前端 JS 动态计算 -->
-<script>
-  // 起始日期（注意：月是从0开始）
-  const start = new Date(Date.UTC(2025, 6, 8));
-
-  // 当前 UTC 时间
-  const now = new Date();
-  const utc = now.getTime();
-
-  // 东京时间 = UTC + 9 小时
-  const tokyoTime = utc + 9 * 60 * 60 * 1000;
-  const tokyoDate = new Date(tokyoTime);
-
-  // 只保留“东京年月日”
-  const today = new Date(Date.UTC(
-    tokyoDate.getUTCFullYear(),
-    tokyoDate.getUTCMonth(),
-    tokyoDate.getUTCDate()
-  ));
-
-  // 计算相差的天数
-  const diffDays = Math.floor((today - start) / (1000 * 60 * 60 * 24));
-
-  // 设置图片地址
-  const url = `https://count.getloli.com/@カンカン?name=カンカン&theme=rule34&padding=4&offset=0&align=bottom&scale=1&pixelated=1&darkmode=1&num=${diffDays}`;
-
-  // 页面加载后设置图片
-  window.addEventListener("DOMContentLoaded", () => {
-    const img = document.getElementById("day-counter");
-    if (img) img.src = url;
-  });
-</script>
+<img src={url} class="inline align-middle relative top-[20px]" alt="カンカン" />
